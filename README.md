@@ -1,24 +1,24 @@
-# Homebrew Tokscale
+# Homebrew Tokcat
 
-Homebrew tap for Tokscale.
+Homebrew tap for Tokcat.
 
 ## Install
 
 ```sh
-brew tap handlecusion/tokscale
-brew install --cask tokscale
+brew tap handlecusion/tokcat
+brew install --cask tokcat
 ```
 
-The `tokscale` cask installs the macOS menubar app and depends on the
-`tokscale` formula in this tap, which installs the CLI.
+The `tokcat` cask installs the macOS menubar app and depends on the
+`tokscale` formula in this tap, which installs the upstream CLI.
 
-After installation, open Tokscale from Applications. It runs in the macOS menu
+After installation, open Tokcat from Applications. It runs in the macOS menu
 bar and reads token usage through the installed `tokscale` CLI.
 
 ## Packages
 
-- `tokscale`: CLI formula, sourced from `@tokscale/cli-darwin-arm64`
-- `tokscale` cask: macOS menubar app, sourced from the `tokscale-3d` GitHub release
+- `tokscale`: upstream CLI formula, sourced from `@tokscale/cli-darwin-arm64`
+- `tokcat` cask: macOS menubar app, sourced from the `tokcat` GitHub release
 
 ## Thanks
 
