@@ -7,7 +7,7 @@ cask "tokcat" do
   desc "Menubar dashboard for local AI token usage"
   homepage "https://github.com/handlecusion/tokcat"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Tokcat.app"
 
@@ -18,15 +18,16 @@ cask "tokcat" do
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/Tokcat.app"]
     system_command "/usr/bin/codesign",
                    args: ["--force", "--deep", "--sign", "-", "#{appdir}/Tokcat.app"]
-    system_command "/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister",
+    system_command "/System/Library/Frameworks/CoreServices.framework/Frameworks/" \
+                   "LaunchServices.framework/Support/lsregister",
                    args: ["-f", "#{appdir}/Tokcat.app"]
   end
 
   zap trash: [
     "~/Library/Application Support/com.handlecusion.tokcat",
-    "~/Library/Preferences/com.handlecusion.tokcat.plist",
     "~/Library/Caches/com.handlecusion.tokcat",
-    "~/Library/Saved Application State/com.handlecusion.tokcat.savedState",
     "~/Library/LaunchAgents/com.handlecusion.tokcat.plist",
+    "~/Library/Preferences/com.handlecusion.tokcat.plist",
+    "~/Library/Saved Application State/com.handlecusion.tokcat.savedState",
   ]
 end
