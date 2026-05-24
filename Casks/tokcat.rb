@@ -1,14 +1,13 @@
 cask "tokcat" do
-  version "0.1.20"
-  sha256 "8a1e613aa1c8304cefae645a1bd95cb906c32c8a5c839bd13cfb3e96de12de04"
+  version "0.1.21"
+  sha256 "5e6e0626b69d97edfced3acfb3092cb5fec0b05f5b7110afa632260efa82a7f1"
 
   url "https://github.com/handlecusion/tokcat/releases/download/v#{version}/Tokcat_#{version}_aarch64.dmg"
   name "Tokcat"
-  desc "Menubar dashboard for tokscale CLI token usage"
+  desc "Menubar dashboard for local AI token usage"
   homepage "https://github.com/handlecusion/tokcat"
 
   depends_on macos: ">= :big_sur"
-  depends_on formula: "tokscale"
 
   app "Tokcat.app"
 
