@@ -1,6 +1,6 @@
 cask "tokcat" do
-  version "0.1.27"
-  sha256 "8638f2b4997f81459f8589c527c523a6f975a980a758d39a18031414fa783c25"
+  version "0.1.28"
+  sha256 "843d75c771ab804b34b32c7080d01e3a3bcd22632f63f4605b0a1ca5288929e6"
 
   url "https://github.com/handlecusion/tokcat/releases/download/v#{version}/Tokcat_#{version}_aarch64.dmg"
   name "Tokcat"
