@@ -1,8 +1,10 @@
 cask "tokcat" do
-  version "0.1.30"
-  sha256 "d37d7235c275c6046d914288367c08aaa4d10a6f18771871102a3ca1e1f71205"
+  arch arm: "aarch64", intel: "x64"
+  version "0.1.31"
+  sha256 arm:   "d442d0aa44fc17d132b6a07fc34bca335cb1899a0a089ac1035e2d0864fbcbc1",
+         intel: "202544e28cfad39703c23d4e33c7a48315bc36a1bb48a4b4d2e93239402cfe77"
 
-  url "https://github.com/handlecusion/tokcat/releases/download/v#{version}/Tokcat_#{version}_aarch64.dmg"
+  url "https://github.com/handlecusion/tokcat/releases/download/v#{version}/Tokcat_#{version}_#{arch}.dmg"
   name "Tokcat"
   desc "Menubar dashboard for local AI token usage"
   homepage "https://github.com/handlecusion/tokcat"
