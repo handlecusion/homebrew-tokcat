@@ -1,8 +1,8 @@
 cask "tokcat" do
   arch arm: "aarch64", intel: "x64"
-  version "0.1.33"
-  sha256 arm:   "4c0fac57ecc982040bf63639ef707d190585603444fb729b233951f94bb38db8",
-         intel: "16563baf3d08f214ed43d35b9dc799961e3464f916e9535ae054bbbd8b3a1f9e"
+  version "0.1.34"
+  sha256 arm:   "16424f388a3b3aa386c6137adf67fef1bd3f5e34519f1bbe45a59e13a6f4a074",
+         intel: "29e162fcce69f8d7d98d27f2136aadc232369c7bc1b0734a2bed9ef7a91e2f21"
 
   url "https://github.com/handlecusion/tokcat/releases/download/v#{version}/Tokcat_#{version}_#{arch}.dmg"
   name "Tokcat"
