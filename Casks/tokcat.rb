@@ -7,7 +7,7 @@ cask "tokcat" do
   desc "AI token usage monitor for the macOS menu bar"
   homepage "https://github.com/handlecusion/tokcat"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Tokcat.app"
 
